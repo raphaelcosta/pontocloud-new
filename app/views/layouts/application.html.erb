@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pontocloud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="//use.typekit.net/tmu0ugj.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="container-fluid top-nav">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="logo">
+          <%= image_tag 'logo2.jpg', width: '185' %>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-4 col-md-offset-4 top-nav">
+        <nav>
+          <a href="#" class="text">
+            <span class="fui-time"></span>
+            início
+          </a>
+          <a href="#" class="text">
+            <span class="fui-gear"></span>
+            preferências
+          </a>
+          <a href="#" class="text">
+            <span class="fui-power"></span>
+            sair
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <div class="col-xs-12 col-md-4 stats">
+      <%= image_tag 'profile.png' %>
+      <h3>Cristina</h3>
+      <p>140hrs / mês  •  10hrs / semana</p>
+      <span>4:30 <small>/ hoje</small></span>
+    </div>
+    <div class="col-xs-12 col-md-4 main-action">
+      <div class="round-button-circle">
+        <a href="http://example.com" class="round-button">
+          <%= image_tag 'building.png' %>
+          <span class="text">
+            Começar
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4 chart">
+      <%= image_tag 'chart.png' %>
+    </div>
+
+  </main>
+</body>
+</html>
